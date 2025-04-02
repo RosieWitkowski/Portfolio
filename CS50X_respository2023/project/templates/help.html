@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class ="outlineBox3 wrapWords">
+    <h3>WHY use pocketLibrary.io?</h3>
+    <p><h4>The following is a list of possible uses:</h4>
+        <ul>
+            <li> Searching by author, to view what books you own by a particular individual</li>
+            <li> Searching by title, when considering buying a new book</li>
+            <li> Searching using partial phrases, when you don't remember a book's full title or author's name</li>
+            <li> Showing friends your collection, in a single place, with options to sort by title or author (A->Z or Z->A)</li>
+            <li> Viewing the total number of books you own, using the 'count books' button</li>
+        </ul>
+    </p>
+
+    <h3>HOW to use pocketLibrary.io?</h3>
+    <p><h4>The following is a description of interactive items:</h4>
+        <ul>
+            <h5>HOMEPAGE</h5>
+            <li>  The title at the top of the page 'pocketLibrary.io', is a button that'll return you to the homepage.</li>
+            <h5>LIBRARY</h5>
+            <li> ADDING: To add a book, use the "+ BOOK" button in the bottom right. Type in the book's title (required) and optionally the author (if you want to add books quickly, you can leave the author blank and it'll be recorded as by 'Default'.)</li>
+            <li> DELETING: Every book you add to your library is displayed on the bookshelf, in the middle of your screen. Each book has its own 'delete' button, which is a red box with a black 'X'. Books are deleted using their id so if you own multiple copies of a book, with the same title and author, deleting one will leave the others intact.</li>
+            <li> COUNTING: If you would like to see the number of books you own in total, click on the 'COUNT BOOKS' button in the top right.</li>
+            <h5>BOOKSHELF</h5>
+            <li> SCROLL BAR: All books in your library are displayed on the bookshelf, in the middle of your screen. You can use the white scroll bar, across the shelf, to view all of these books.</li>
+            <li> SORT: You can decide which order the books are displayed, using the sort buttons in the bottom left. (Author or title, A->Z or Z->A.)</li>
+            <h5>SEARCH BAR</h5>
+            <li> SEARCH: Use the search bar and button to look for (a) book(s), by their title or author. Your search does not need to be the full name so if you're unsure, search for a word/phrase you know and the full book should show in the results. Results show matches for both title and author.</li>
+        </ul>
+    </p>
+
+</div>
+{% endblock %}

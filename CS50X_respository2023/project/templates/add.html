@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class ="outlineBox">
+    <form action="/add" method="post" id="addTemplate">
+        <input name = "title" autocomplete="off" autofocus type="text" required placeholder="title" id="addTitle">
+        <input name = "author" autocomplete="off" type="text" placeholder="author" id="addAuthor">
+        <button type="submit" id="addButton">ADD</button>
+    </form>
+</div>
+{% endblock %}

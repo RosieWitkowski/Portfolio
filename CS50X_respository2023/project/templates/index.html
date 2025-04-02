@@ -1,0 +1,94 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<!-- Bookshelf -->
+<div id ="bookshelf">
+    <div id ="blue-strip"></div>
+    <div id = "blue-background">
+
+        <table class="booksContainer">
+            <tr class="scrollHorizontal">
+                <!-- SQL database -->
+                {% for book in books %}
+                <td class="book">
+                    <!--Delete option -->
+                    <form action="/delete" method="POST">
+                        <input type="hidden" name="author" value= "{{book['author']}}">
+                        <input type="hidden" name="title" value= "{{book['title']}}">
+                        <button name="id" class="delete" type="submit" value= "{{book['id']}}" >X</button>
+                    </form>
+                    <!-- SQL database values -->
+                    {{book["title"]}} by {{book["author"]}}
+                </td>
+                {% endfor %}
+
+                <!-- Search bar -->
+                <form action = "/search" method="POST">
+                    <input type = text placeholder="search by title or author" name="text" id="searchBar" autocomplete="off">
+                    <button type= "submit">SEARCH</button>
+                </form>
+
+                <!-- Numer of books -->
+                <form action = "/number" method="GET">
+                    <button type= "submit" id="countBooks">COUNT BOOKS</button>
+                </form>
+            </tr>
+        </table>
+
+    </div>
+    <div id = "shelf"></div>
+</div>
+
+<!-- Interactive buttons -->
+<div>
+    <table>
+        <tr>
+            <td class="titles left"><h3>Sort</h3></td>
+            <td class="titles middle"><h3>Help</h3></td>
+            <td class="titles right"><h3>Books</h3></td>
+        </tr>
+        <tr>
+        <tr>
+            <td>
+                <form action="/sort" method="post">
+                    <button class="button-square padding-sort sort" type="submit" value="title" name="sort">TITLE A->Z</button>
+                </form>
+            </td>
+            <td>
+                <form action="/desc" method="post">
+                    <button class="button-square padding-sort sort2" type="submit" value="title" name="sort">TITLE Z->A</button>
+                </form>
+            </td>
+
+            <td class = "padding-circle">
+                <form action="/help" method="get">
+                    <button class="button-circle" type="submit">?</button>
+                </form>
+            </td>
+
+            <td class = "padding-square">
+                <form action="/add" method="get">
+                    <button class="button-square" type="submit">+ BOOK</button>
+                </form>
+            </td></tr>
+
+            <td class = "padding-sort">
+                <form action="/sort" method="post">
+                    <button class="button-square padding-sort2 sort setOn" type="submit" value="author" name="sort">AUTHOR A->Z</button>
+                </form>
+            </td>
+            <td class = "padding-sort">
+                <form action="/desc" method="post">
+                    <button class="button-square padding-sort2 sort2" type="submit" value="author" name="sort">AUTHOR Z->A</button>
+                </form>
+            </td>
+
+
+        </tr>
+    </tr>
+    </table>
+    <div id="Copyright">Copyright Rosie Witkowski</div>
+</div>
+
+
+{% endblock %}

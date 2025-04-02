@@ -1,0 +1,13 @@
+sort1 uses: bubble sort
+
+How do you know?: Bubble sort has O(n^2) and Ω(n). While the time when unsorted is large, it's lower bound is faster than merge sort or selection sort and has the smallest time.
+
+sort2 uses: merge sort
+
+How do you know?: Merge sort has Θ(n log n). The speeds of different types of input of same size have similiar values (similiar upper and lower bound.) O(n log n) is faster than O(n^2) and sort 2 is faster than sort 1 and sort 3 (selection sort and bubble sort have O(n^2), which is slower) but sort 2 is slower than sort 1 when the input is sorted (because bubble sort has Ω(n), which is faster than Ω(n log n))
+
+sort3 uses: selection sort
+
+How do you know?: Selection sort has Θ(n^2) and the speeds of different types of same input size have similiar values. The speed at which its sorted remains Ω(n^2) and the speed this data ran when sorted was the largest of the three.
+
+DELETE OTHER FILES IN THIS FOLDER

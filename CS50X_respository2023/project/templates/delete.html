@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class ="outlineBox">
+    <form action="/delete" method="post">
+        <h3 class="centered">Are you sure you want to delete "{{title}} by {{author}}"?</h3>
+        <input type="hidden" name="id" value="{{id}}">
+        <button type="submit" name="confirm" value="yes" id="confirmButtonLeft">YES</button>
+        <button type="submit" name="confirm" value="no" id="confirmButtonRight">NO</button>
+    </form>
+</div>
+{% endblock %}

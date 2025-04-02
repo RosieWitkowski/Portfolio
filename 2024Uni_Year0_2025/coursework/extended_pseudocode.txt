@@ -1,0 +1,36 @@
+# Initialise
+occurences = empty list
+
+# Validate
+valid = false
+while valid is false:
+    date = user input 
+    IF date.count("/") != 3:
+        continue
+    day, month, year = date.split("/")
+
+    if validate_date(day, month, year):
+        valid = true 
+
+FUNCTION validate_date(day, month, year):
+month_days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+    IF month < 1 or day < 1 or year < 0:
+        RETURN false
+    ELSE IF month > 12:
+        RETURN false
+    ELSE IF month_days[month - 1] < day:
+        RETURN false 
+    ELSE IF month is febuary dan day is 29:
+        RETURN true IF leap year ELSE false 
+    ELSE
+        RETURN true 
+        
+# Get dates
+special_day = doomsday(day, month, year)
+
+FOR years in range 50
+    year = year + years 
+    if doomsday(day, month, year) is equal to special_day:
+        add year to occurences
+
+print occurences

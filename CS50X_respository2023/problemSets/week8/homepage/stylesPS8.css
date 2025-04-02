@@ -1,0 +1,51 @@
+body
+{
+    background-color: brown;
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 50pt;
+    margin-right: 50pt;
+}
+
+.title
+{
+    text-align: center;
+    color: green;
+    text-shadow: 1pt 1pt white;
+    text-decoration: 2pt overline black;
+    font: 100pt Minecraft;
+}
+
+.navBar
+{
+    color: green;
+    background-color: black;
+    font: 50pt Minecraft;
+}
+
+.navHolder
+{
+    text-align: center;
+}
+
+.textSection
+{
+    color: black;
+    font-size: 20pt;
+    font-family: Minecraft;
+    padding-top: 25pt;
+}
+
+#Picture
+{
+    float:left;
+    padding-left: 30pt;
+    padding-right: 30pt;
+}
+
+.diamondsButton
+{
+    color: black;
+    font: 15pt Minecraft;
+}

@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <div class="outlineBox2 centered wrapNumbers">
+        <h2>Number of books: </h2>
+        {% for item in number %}
+
+            {{item["COUNT(*)"]}}
+
+        {% endfor %}
+    </div>
+{% endblock %}
