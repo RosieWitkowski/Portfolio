@@ -1,4 +1,5 @@
 # 1572. Matrix Diagonal Sum
+# Solution: https://leetcode.com/problems/matrix-diagonal-sum/solutions/6971026/beats-100-clear-intuitive-logic-beginner-37bb/
 
 def diagonalSum(mat):    
     # Square so only need length not height and width
