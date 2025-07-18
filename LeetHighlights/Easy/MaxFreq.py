@@ -1,5 +1,5 @@
 # 3541. Find Most Frequent Vowel and Consonant
-# Solution: https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/
+# Solution: https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/solutions/6877148/easiest-beginner-friendly-high-readabili-60or/
 
 def maxFreqSum(s):
     maxVow, maxConst = 0,0
