@@ -2,7 +2,7 @@
 A collection of my coding projects from 2023 to now, including:
 * University work
   * Select classwork
-  * Due to risk of student misconduct through plagarism, coursework is kept in a seperate (private) repo
+  * Due to risk of student misconduct through plagiarism, coursework is kept in a separate (private) repo
 * Courses
   * CS50X (including problem sets and final project)
   * LinkedIn Learning
