@@ -6,6 +6,6 @@ A collection of my coding projects from 2023 to now, including:
   * CS50X (including problem sets and final project)
   * LinkedIn Learning
 ### Competitions
-  * Hackathon 2025 ~~(to be added when adding year 1 at end of year, https://github.com/RosieWitkowski/UniversityYear1/tree/main/hackathon2025)~~ Organised into seperate repos (see profile README)
+  * Hackathon 2025 ~~(to be added)~~ Organised into seperate repos (see profile README)
 ### Other, personal projects/notes  
 * Other personal projects/notes
